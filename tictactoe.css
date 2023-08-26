@@ -1,0 +1,20 @@
+.cell{
+    width: 75px;
+    height: 75px;
+    border: 2px solid;
+    box-shadow: 0 0 0 2px;
+    line-height: 75px;
+    font-size: 50px;
+    cursor: pointer;
+    background-color:#6C757D;
+}/* styles the grid board*/
+#gameContainer{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}/* styles the text*/
+#cellContainer{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 225px;
+    margin: auto;
+}/* aligns the cells into a grid with 3 columns*/
