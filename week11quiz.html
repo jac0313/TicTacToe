@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table  id = "table">
+        <thead id = "tableHead">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody id = "tableBody"></tbody>
+    </table>
+
+
+    <script>
+let customers = [
+    {
+    firstName:'Sam',
+    lastName : 'Smith',
+    email: "ssmith@gmail.com"
+    },
+    {
+        firstName:'Tom',
+    lastName : 'Jones',
+    email: "tjones@gmail.com"
+    }
+    ];
+    let newRowHTML = "";
+    for(let customer of customers){
+        newRowHTML= 
+        `<tr>
+            <td>${customer.firstName}</td>
+            <td>${customer.lastName}</td>
+            <td>${customer.email}</td>
+        </tr>`;
+        $("#tableBody").append(newRowHTML);
+
+    }
+
+
+    </script>
+</body>
+</html>
